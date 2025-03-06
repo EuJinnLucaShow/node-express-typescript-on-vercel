@@ -28,3 +28,11 @@ A starter template for building and deploying Express applications with TypeScri
    ```bash
    git clone https://github.com/your-username/node-express-typescript-on-vercel.git
    cd node-express-typescript-on-vercel
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env
