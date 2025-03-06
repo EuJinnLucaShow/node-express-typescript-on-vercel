@@ -10,6 +10,11 @@
     "ts.check": "tsc --project tsconfig.json --noEmit",
     "lint": "tsc --noEmit"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run ts.check && npm run build && git add dist"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
