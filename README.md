@@ -42,7 +42,12 @@ A starter template for building and deploying Express applications with TypeScri
 
 ### Available Scripts
 
-**CommandDescription**npm run start:devStart dev server with live reloadnpm run buildCompile TypeScript to productionnpm run ts.checkType-check without emitting filesnpm startRun production build
+| Command	 | Description |
+| ----------- | ----------- |
+| ```npm run start:dev``` | Start dev server with live reload   |
+| ```npm run build``` | Compile TypeScript to production   |
+| ```npm run ts.check``` | Type-check without emitting files   |
+| ```npm start``` | Run production build   |
 
 ### Workflow
 
@@ -80,3 +85,6 @@ A starter template for building and deploying Express applications with TypeScri
     C --> D[Add Built Files]
     D --> E[Commit Complete]
     B -->|Fail| F[Abort Commit]
+```
+
+віаі
