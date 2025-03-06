@@ -44,18 +44,22 @@ A starter template for building and deploying Express applications with TypeScri
 
 | Command	 | Description |
 | ----------- | ----------- |
-| ```npm run start:dev``` | Start dev server with live reload   |
-| ```npm run build``` | Compile TypeScript to production   |
-| ```npm run ts.check``` | Type-check without emitting files   |
-| ```npm start``` | Run production build   |
+| `npm run start:dev` | Start dev server with live reload   |
+| `npm run build` | Compile TypeScript to production   |
+| `npm run ts.check` | Type-check without emitting files   |
+| `npm start` | Run production build   |
 
 ### Workflow
 
-1.  bashCopynpm run start:devServer runs at http://localhost:3000
+1.  Start development server:
+   ```bash
+      npm run start:dev
+   ```
+   Server runs at `http://localhost:3000`
+
+3.  Make changes in `src/` directory
     
-2.  Make changes in src/ directory
-    
-3.  Commit changes (automatically triggers pre-commit validation)
+4.  Commit changes (automatically triggers pre-commit validation)
     
 
 ☁️ Vercel Deployment
@@ -78,13 +82,11 @@ A starter template for building and deploying Express applications with TypeScri
 
 🔒 Pre-Commit Validation
 ------------------------
-  ```bash
+ ```bash
   graph LR
     A[Commit Attempt] --> B{Type Check}
     B -->|Pass| C[Production Build]
     C --> D[Add Built Files]
     D --> E[Commit Complete]
     B -->|Fail| F[Abort Commit]
-```
 
-віаі
