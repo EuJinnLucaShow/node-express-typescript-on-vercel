@@ -36,3 +36,47 @@ A starter template for building and deploying Express applications with TypeScri
 3. Set up environment variables:
    ```bash
    cp .env.example .env
+
+🧑💻 Development
+----------------
+
+### Available Scripts
+
+**CommandDescription**npm run start:devStart dev server with live reloadnpm run buildCompile TypeScript to productionnpm run ts.checkType-check without emitting filesnpm startRun production build
+
+### Workflow
+
+1.  bashCopynpm run start:devServer runs at http://localhost:3000
+    
+2.  Make changes in src/ directory
+    
+3.  Commit changes (automatically triggers pre-commit validation)
+    
+
+☁️ Vercel Deployment
+--------------------
+
+1.  Push code to your Git repository
+    
+2.  [Import Project](https://vercel.com/new) in Vercel dashboard
+    
+3.  Configure settings:
+    
+    *   **Build Command:** npm run build
+        
+    *   **Output Directory:** dist
+        
+    *   Add environment variables from .env
+        
+4.  Deploy! 🚀
+    
+
+🔒 Pre-Commit Validation
+------------------------
+  ```bash
+  graph LR
+    A[Commit Attempt] --> B{Type Check}
+    B -->|Pass| C[Production Build]
+    C --> D[Add Built Files]
+    D --> E[Commit Complete]
+    B -->|Fail| F[Abort Commit]
